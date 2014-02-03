@@ -177,13 +177,13 @@ if(maybeUrls){
 
 // Add like / dislike links
 
-  var like = $(" <img class='training like' src='https://github.com/rogerbraun/HNBayes/raw/master/images/thumbs-up.png' />");
-  var dislike = $(" <img class='training dislike' src='https://github.com/rogerbraun/HNBayes/raw/master/images/thumbs-down.png' />");
-  var rate = $(" <img class='rate' src='https://github.com/rogerbraun/HNBayes/raw/master/images/eye.png' />");
+  var like = $(" <img class='training like' src='//github.com/gms8994/HNBayes/raw/master/images/thumbs-up.png' />");
+  var dislike = $(" <img class='training dislike' src='//github.com/gms8994/HNBayes/raw/master/images/thumbs-down.png' />");
+  var rate = $(" <img class='rate' src='//github.com/gms8994/HNBayes/raw/master/images/eye.png' />");
   var rate_result = $("<span class='rate_result'></span>");
 
   var trainFromUrl = function(url, klass){
-    var request = "http://viewtext.org/api/text?url=" + encodeURI(url) + "&callback=?";
+    var request = "//viewtext.org/api/text?url=" + encodeURI(url) + "&callback=?";
     $.getJSON(request, function(response){
       filter.train(response.content, klass);
     });
@@ -202,7 +202,7 @@ if(maybeUrls){
   document.body.appendChild(style);
 
   var rateFromUrl = function(url, target){
-    var request = "http://viewtext.org/api/text?url=" + encodeURI(url) + "&callback=?";
+    var request = "//viewtext.org/api/text?url=" + encodeURI(url) + "&callback=?";
     $.getJSON(request, function(response){
       var good = filter.categoryProbability(response.content, "good");
       var bad = filter.categoryProbability(response.content, "bad");
