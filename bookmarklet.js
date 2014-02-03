@@ -1,1 +1,1 @@
-javascript:(function(){var script = document.createElement("script"); script.src="https://raw.github.com/rogerbraun/HNBayes/master/hnbayes.js"; document.body.appendChild(script);})();
+javascript:(function(){var script = document.createElement("script"); script.src="https://raw.github.com/gms8994/HNBayes/master/hnbayes.js"; document.body.appendChild(script);})();
